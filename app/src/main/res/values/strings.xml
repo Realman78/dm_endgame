@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Drzavna Matura - Endgame</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pedro">Pedro</string>
+    <string name="pedro_pedro_gmail_com">pedro.pedro@gmail.com</string>
+    <string name="slika_profila">Slika Profila</string>
+    <string name="shop">Shop</string>
+    <string name="options">Options</string>
+</resources>

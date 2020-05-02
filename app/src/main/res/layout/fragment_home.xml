@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragments.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:onClick="openGradiva"
+            android:id="@+id/matematikaVisa"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#0BF862"
+            app:layout_constraintBottom_toTopOf="@+id/hrvatskiVisa"
+            app:layout_constraintEnd_toStartOf="@+id/matematikaNiza"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/imageViewMatA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.35"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/imageViewMatA"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/common_google_signin_btn_icon_dark"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="@+id/matematikaVisa"
+            app:layout_constraintStart_toStartOf="@+id/matematikaVisa"
+            app:layout_constraintTop_toTopOf="@+id/matematikaVisa" />
+
+        <TextView
+            android:id="@+id/textViewMatA"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:text="Matematika A"
+            android:textAlignment="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:autoSizeTextType="uniform"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintEnd_toEndOf="@+id/matematikaVisa"
+            app:layout_constraintStart_toStartOf="@+id/matematikaVisa"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewMatA" />
+
+        <View
+            android:id="@+id/matematikaNiza"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="openGradiva"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.3"
+            android:background="#0BF862"
+            app:layout_constraintStart_toEndOf="@+id/matematikaVisa"
+            app:layout_constraintTop_toTopOf="@+id/matematikaVisa"
+            app:layout_constraintWidth_percent="0.35"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/imageViewMatB"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/common_google_signin_btn_icon_dark"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="@+id/matematikaNiza"
+            app:layout_constraintStart_toStartOf="@+id/matematikaNiza"
+            app:layout_constraintTop_toTopOf="@+id/matematikaVisa" />
+
+        <TextView
+            android:id="@+id/textViewMatB"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:textAlignment="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintHeight_percent="0.05"
+            android:layout_marginTop="8dp"
+            android:text="Matematika B "
+            android:textStyle="bold"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="@+id/matematikaNiza"
+            app:layout_constraintStart_toStartOf="@+id/matematikaNiza"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewMatB" />
+
+        <View
+            android:id="@+id/hrvatskiVisa"
+            android:onClick="openGradiva"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/engleskiVisa"
+            app:layout_constraintHeight_percent="0.3"
+            android:background="#1A9DF4"
+            app:layout_constraintStart_toStartOf="@+id/matematikaVisa"
+            app:layout_constraintTop_toBottomOf="@+id/matematikaVisa"
+            app:layout_constraintWidth_percent="0.35"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/imageViewHrvA"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/common_google_signin_btn_icon_dark"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="@+id/hrvatskiVisa"
+            app:layout_constraintStart_toStartOf="@+id/hrvatskiVisa"
+            app:layout_constraintTop_toTopOf="@+id/hrvatskiVisa" />
+
+        <TextView
+            android:id="@+id/textViewHrvA"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintHeight_percent="0.05"
+            android:layout_marginTop="8dp"
+            android:text="Hrvatski A "
+            android:textStyle="bold"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="@+id/hrvatskiVisa"
+            app:layout_constraintStart_toStartOf="@+id/hrvatskiVisa"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewHrvA" />
+
+        <View
+            android:id="@+id/hrvatskiNiza"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="openGradiva"
+            android:background="#1A9DF4"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintStart_toStartOf="@+id/matematikaNiza"
+            app:layout_constraintTop_toTopOf="@id/hrvatskiVisa"
+            app:layout_constraintWidth_percent="0.35"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/imageViewHrvB"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/common_google_signin_btn_icon_dark"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="@+id/hrvatskiNiza"
+            app:layout_constraintStart_toStartOf="@+id/hrvatskiNiza"
+            app:layout_constraintTop_toTopOf="@+id/hrvatskiNiza" />
+
+        <TextView
+            android:id="@+id/textViewHrvB"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:textAlignment="center"
+            android:layout_marginLeft="8dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginRight="8dp"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintHeight_percent="0.05"
+            android:layout_marginTop="8dp"
+            android:text="Hrvatski B "
+            app:layout_constraintEnd_toEndOf="@+id/hrvatskiNiza"
+            app:layout_constraintStart_toStartOf="@+id/hrvatskiNiza"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewHrvB" />
+
+        <View
+            android:id="@+id/engleskiVisa"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#E82E59"
+            android:onClick="openGradiva"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintStart_toStartOf="@+id/matematikaVisa"
+            app:layout_constraintTop_toBottomOf="@+id/hrvatskiVisa"
+            app:layout_constraintWidth_percent="0.35"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/imageViewEngA"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/common_google_signin_btn_icon_dark"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="@+id/engleskiVisa"
+            app:layout_constraintStart_toStartOf="@+id/engleskiVisa"
+            app:layout_constraintTop_toTopOf="@+id/engleskiVisa" />
+
+        <TextView
+            android:id="@+id/textViewEngA"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintHeight_percent="0.05"
+            android:layout_marginTop="8dp"
+            android:text="Engleski A "
+            app:layout_constraintEnd_toEndOf="@+id/engleskiVisa"
+            app:layout_constraintStart_toStartOf="@+id/engleskiVisa"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewEngA" />
+
+        <View
+            android:id="@+id/engleskiNiza"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#E82E59"
+            app:layout_constraintHeight_percent="0.3"
+            android:onClick="openGradiva"
+            app:layout_constraintStart_toStartOf="@+id/matematikaNiza"
+            app:layout_constraintTop_toTopOf="@+id/engleskiVisa"
+            app:layout_constraintWidth_percent="0.35"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/imageViewEngB"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/common_google_signin_btn_icon_dark"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="@+id/engleskiNiza"
+            app:layout_constraintStart_toStartOf="@+id/engleskiNiza"
+            app:layout_constraintTop_toTopOf="@+id/engleskiNiza" />
+
+        <TextView
+            android:id="@+id/textViewEngB"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintHeight_percent="0.05"
+            android:layout_marginTop="8dp"
+            android:text="Engleski B "
+            app:layout_constraintEnd_toEndOf="@+id/engleskiNiza"
+            app:layout_constraintStart_toStartOf="@+id/engleskiNiza"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewEngB" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
